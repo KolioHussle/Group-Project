@@ -610,7 +610,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6cf8263c6ff9224cac460e1eecd726a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScore: 0
+  woodCount: 0
+  woodAnimations:
+  - {fileID: 1688944292}
+  - {fileID: 2103893593}
+  - {fileID: 666048137}
+  woodRenderer:
+  - {fileID: 1688944289}
+  - {fileID: 2103893590}
+  - {fileID: 666048134}
+  woodCollider:
+  - {fileID: 1688944288}
+  - {fileID: 2103893589}
+  - {fileID: 666048133}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,6 +1068,7 @@ GameObject:
   - component: {fileID: 666048134}
   - component: {fileID: 666048133}
   - component: {fileID: 666048132}
+  - component: {fileID: 666048137}
   m_Layer: 0
   m_Name: Wood Block (2)
   m_TagString: Untagged
@@ -1079,6 +1092,7 @@ MonoBehaviour:
   woodRenderer: {fileID: 666048134}
   woodCollider: {fileID: 666048133}
   bridge: {fileID: 298504764}
+  isLast: 1
 --- !u!65 &666048133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1158,13 +1172,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666048131}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.008726558, y: 0, z: 0, w: 0.999962}
   m_LocalPosition: {x: -4, y: 1, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1, y: 0, z: 0}
+--- !u!95 &666048137
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666048131}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c83bc94cd8ab7c4390412f6de083a0c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &714384214 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7456214084251516808, guid: fa6868ee95c274c9180e91739967ec61,
@@ -1613,6 +1648,7 @@ GameObject:
   - component: {fileID: 1688944289}
   - component: {fileID: 1688944288}
   - component: {fileID: 1688944287}
+  - component: {fileID: 1688944292}
   m_Layer: 0
   m_Name: Wood Block
   m_TagString: Untagged
@@ -1636,6 +1672,7 @@ MonoBehaviour:
   woodRenderer: {fileID: 1688944289}
   woodCollider: {fileID: 1688944288}
   bridge: {fileID: 298504764}
+  isLast: 0
 --- !u!65 &1688944288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1716,12 +1753,33 @@ Transform:
   m_GameObject: {fileID: 1688944286}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 1, z: -5.7156525}
+  m_LocalPosition: {x: -4, y: 1, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1688944292
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688944286}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7d843d1c96156b24797b7ce6572bc2a2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &1725861639 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6171065927392831707, guid: fa6868ee95c274c9180e91739967ec61,
@@ -5893,6 +5951,7 @@ GameObject:
   - component: {fileID: 2103893590}
   - component: {fileID: 2103893589}
   - component: {fileID: 2103893588}
+  - component: {fileID: 2103893593}
   m_Layer: 0
   m_Name: Wood Block (1)
   m_TagString: Untagged
@@ -5916,6 +5975,7 @@ MonoBehaviour:
   woodRenderer: {fileID: 2103893590}
   woodCollider: {fileID: 2103893589}
   bridge: {fileID: 298504764}
+  isLast: 0
 --- !u!65 &2103893589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5996,12 +6056,33 @@ Transform:
   m_GameObject: {fileID: 2103893587}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 1, z: -1.9799957}
+  m_LocalPosition: {x: -4, y: 1, z: -4.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2103893593
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103893587}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 72ad09650fdddaf4aaad4578a59da6ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1541143682881846264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6164,7 +6245,7 @@ PrefabInstance:
     - target: {fileID: 5897399493511449534, guid: 7074df04d8ac84886bcb48a7682e68bb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 5897399493511449534, guid: 7074df04d8ac84886bcb48a7682e68bb,
         type: 3}
@@ -6174,7 +6255,7 @@ PrefabInstance:
     - target: {fileID: 5897399493511449534, guid: 7074df04d8ac84886bcb48a7682e68bb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30.5
+      value: 7.2
       objectReference: {fileID: 0}
     - target: {fileID: 5897399493511449534, guid: 7074df04d8ac84886bcb48a7682e68bb,
         type: 3}
