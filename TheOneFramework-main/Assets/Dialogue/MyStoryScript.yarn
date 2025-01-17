@@ -1,4 +1,96 @@
 ﻿title: Start
 ---
-<<log "Hello world">>
+Thoughts: Damn! My head hurts.
+Thoughts: Where am I? What am I doing here?
+Thoughts: Well what ever I need to get out of here!
+===
+
+title: Plank
+---
+Thoughts: That’s a heavy-looking plank.
+===
+
+title: Forest
+---
+Thoughts: This forest looks very familiar.
+===
+
+title: PickupPlank
+---
+Thoughts: This is surprisingly light, I thought it would be much heavier.
+===
+
+title: Gap
+---
+This gap is too big to jump over. I need to find another way to cross it.
+===
+
+title: Split
+---
+Thoughts: The path splits here. I need to make a choice. What’s over there?
+-> Path1
+  Thoughts: It’s just some broken branches… ohh! And blood drops…
+   -> Path2
+      Thoughts: There’s a jacket over there. How odd—I have a jacket just like that.
+-> Path2
+ Thoughts: There’s a jacket over there. How odd—I have a jacket just like that.
+     -> Path1
+        Thoughts: It’s just some broken branches… ohh! And blood drops…
+      
+===
+
+title: Path1
+---
+Thoughts: It’s probably just from an animal, or… no, no, I can’t think like that.
+Thoughts: A note is hanging of a branch. "pick up note"
+thoughts: Ohh shit! A hook with rope(Puts in pocket)
+thoughts: Kinda creepy, but this might be useful later.
+===
+
+title: Path2
+---
+Picks up jacket
+Thoughts: This is my jacket! How did this get here? there a note in the pocket.(note added to invertory)
+Thoughts: A fishing rod!? Why is this laying under my jacket I don't fish.(fishing rod added to the invertory)
+Thoughts: But my brother does, he might be close by.
+===
+
+title: CaveEnter
+---
+Wow! There are a lot of crystals in this cave, I wonder if they are valuable?
+===
+
+title: CavePuzzle
+---
+Shit, the path is blocked. But going back isn’t an option. I need to find a way to clear the path.
+===
+
+title: PuzzleClose
+---
+Those beams are sticking out! If I jump on them, maybe the rocks will fall down.
+===
+
+title: WrongBeamJump
+---
+It wiggled, but they didn’t fall. Maybe one of the others will do the trick.
+===
+
+title: CorrectBeamJump
+---
+Can’t believe that worked!
+And I didn't Die.
+===
+
+title: CaveSplit
+---
+Hmm, the path splits again. Well, I guess I have to choose once more.
+Looking ahead I see...
+ -> CaveLeft1
+    Thoughts: Those look like bloody animal tracks. Could be wolves— that might explain the blood.
+      -> CaveRight1
+       Over there! I think that’s a piece of jeans, and I see footprints. I’m pretty sure those are human.
+ -> CaveRight1
+    Over there! I think that’s a piece of jeans, and I see footprints. I’m pretty sure those are human.
+    -> CaveLeft1
+       Thoughts: Those look like bloody animal tracks. Could be wolves— that might explain the blood.
 ===
