@@ -1046,6 +1046,7 @@ GameObject:
   - component: {fileID: 397273415}
   - component: {fileID: 397273414}
   - component: {fileID: 397273413}
+  - component: {fileID: 397273417}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -1132,13 +1133,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397273412}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.35, y: 5.64, z: 27.52}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.13, y: 4.79, z: 28.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &397273417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397273412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41431ffa91101704ba44537a1956e7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToRetreat: 0.4
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,6 +1597,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSlots: 5
+--- !u!65 &727444645
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664056340}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6527313, y: 0.5015471, z: 1}
+  m_Center: {x: 0.016432002, y: 0.24922645, z: 0}
 --- !u!1 &784814893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,6 +1630,7 @@ GameObject:
   - component: {fileID: 784814896}
   - component: {fileID: 784814895}
   - component: {fileID: 784814894}
+  - component: {fileID: 784814899}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -1681,13 +1717,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784814893}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.35, y: 1.03, z: 30.053904}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.13, y: 0.43500042, z: 30.053904}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &784814899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784814893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41431ffa91101704ba44537a1956e7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToRetreat: 0.4
 --- !u!1 &901567086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,6 +1849,7 @@ GameObject:
   - component: {fileID: 1008322120}
   - component: {fileID: 1008322119}
   - component: {fileID: 1008322118}
+  - component: {fileID: 1008322122}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -1886,13 +1936,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008322117}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.35, y: 4.11, z: 24.55}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.13, y: 2.93, z: 25.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1008322122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008322117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41431ffa91101704ba44537a1956e7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToRetreat: 0.4
 --- !u!1 &1024524901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,6 +1968,7 @@ GameObject:
   - component: {fileID: 1024524904}
   - component: {fileID: 1024524903}
   - component: {fileID: 1024524902}
+  - component: {fileID: 1024524906}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -1991,13 +2055,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024524901}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.35, y: 2.4, z: 27.22}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.13, y: 1.7, z: 27.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1024524906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024524901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41431ffa91101704ba44537a1956e7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToRetreat: 0.4
 --- !u!4 &1096754980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9189328179256122668, guid: aedc29c150838410b8bb96f9e21f808a,
@@ -2980,6 +3057,7 @@ GameObject:
   - component: {fileID: 1704905580}
   - component: {fileID: 1704905579}
   - component: {fileID: 1704905578}
+  - component: {fileID: 1704905582}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -3066,13 +3144,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704905577}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.35, y: 7.04, z: 30.52}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.13, y: 5.96, z: 31.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1704905582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704905577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41431ffa91101704ba44537a1956e7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToRetreat: 0.4
 --- !u!1 &1723166139
 GameObject:
   m_ObjectHideFlags: 0
@@ -7151,6 +7242,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 727444633}
+    - targetCorrespondingSourceObject: {fileID: 6727140655614195178, guid: 31c4819cb9b1b41d3aa8c852d12c5587,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 727444645}
   m_SourcePrefab: {fileID: 100100000, guid: 31c4819cb9b1b41d3aa8c852d12c5587, type: 3}
 --- !u!1001 &1854933189
 PrefabInstance:
@@ -7237,6 +7332,7 @@ GameObject:
   - component: {fileID: 1906180844}
   - component: {fileID: 1906180843}
   - component: {fileID: 1906180842}
+  - component: {fileID: 1906180846}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -7323,13 +7419,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906180841}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.35, y: 8.47, z: 27.99}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.13, y: 6.65, z: 27.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1906180846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906180841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41431ffa91101704ba44537a1956e7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToRetreat: 0.4
 --- !u!1 &1910768346
 GameObject:
   m_ObjectHideFlags: 0
